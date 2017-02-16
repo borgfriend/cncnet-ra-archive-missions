@@ -1,0 +1,17 @@
+{
+  "name": "red-alert-missions-mods-maps-archive",
+  "version": "0.0.1",
+  "description": "Collection of Command and Conquer Red Alert Fan Creations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "download-file": "^0.1.5",
+    "express": "^4.14.1",
+    "request": "^2.79.0"
+  }
+}
