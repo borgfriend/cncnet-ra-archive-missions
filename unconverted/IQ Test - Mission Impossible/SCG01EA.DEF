@@ -1,0 +1,404 @@
+
+[Basic]
+Name=Mission Impossible
+Intro=<none>
+Brief=<none>
+Win=<none>  
+Lose=<none>
+Action=<none> 
+Player=Greece
+Theme=No theme
+CarryOverMoney=0
+ToCarryOver=no
+ToInherit=no
+TimerInherit=no
+CivEvac=no
+NewINIFormat=3
+CarryOverCap=0
+EndOfGame=no
+NoSpyPlane=no
+SkipScore=no
+OneTimeOnly=no
+SkipMapSelect=no
+Official=yes
+FillSilos=no
+TruckCrate=no
+Percent=0
+
+[Spain]
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+
+[Greece]
+Edge=East
+Credits=9
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+TechLevel=15
+Allies=England,GoodGuy,Turkey
+
+[USSR]
+Credits=31
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+TechLevel=15
+Allies=BadGuy,Turkey
+
+[England]
+Edge=West
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+Allies=Greece,GoodGuy
+
+[Germany]
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+
+[France]
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+
+[Turkey]
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+Allies=Greece,USSR
+PlayerControl=yes
+
+[GoodGuy]
+Edge=East
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+Allies=Greece,England
+
+[BadGuy]
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+
+[Neutral]
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+Allies=Special
+
+[Special]
+MaxUnit=150
+MaxInfantry=150
+MaxBuilding=150
+
+[Briefing]
+0=Destroy ALL Soviet forces before time runs out.
+1=@@The rest of the brief did not transmit clearly.
+2=All we got was:
+3=@@Th*  k*y  *o  th**  *iss*o*  lies  w**h  t*e  *hu**h*s.
+4=  G*t  *  ***  int*  e**h  c***c*  *efor*  **u  ***tr*y  it.
+
+[RAMC]
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Initial setup: Greek reinforcements, map display and timer set
+;
+Greece  TRIGGER
+          IF     Any
+;         THEN   RevealMap
+          THEN   Reveal       isle3     @SW       n48 e12
+          THEN   Reveal       isle2     @SW       n20 e5
+          THEN   Reveal                 ch1           e1
+          THEN   Reveal       isle1     @SW       n5  e5
+          THEN   Reinforce                                mcv
+          THEN   Reinforce                                chin
+          THEN   SetTimer     45
+          THEN   Speech       88        ; "Timer started"
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  When War Factory on NW isle captured, reveal new MCV landing spot
+;  
+Greece  TRIGGER
+          IF     EnteredBy    Greece
+          THEN   Reveal                 isle3         e10
+USSR      ITEM   WarFactory   wf        isle3             10
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  When Devil's Den successfully entered, reveal area around Church #2           
+;  
+Greece  TRIGGER
+          IF     EnteredBy    Greece     
+          THEN   Reveal                 ch2
+          THEN   Reveal                 flames
+          CELL                          dd        s3  w1  2   9     F
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Spy infiltrating Church #1 breaks curse on Devil's Den
+;
+        TRIGGER
+          IF     Spied
+          THEN   KillTrigger  devilsden
+          THEN   Text         1 ; Objective 1 met
+          THEN   Text         9 ; `The curse of Devil's Den has been broken`
+USSR      ITEM   Church       ch1       @S        n11 w8 
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Devil's Den curse repeatedly kills all Greek vehicles entering therein
+;
+        TRIGGER  devilsden    F
+;       ------------------
+          IF     EnteredBy    Greece
+          THEN   Destroy
+          THEN   Text         8 ; `The curse of Devil's Den claims a victim!`
+          CELL                          dd            w1  3   9     F
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Spy infiltrating Church #2 extends timer and reveals 4 areas
+;
+        TRIGGER
+          IF     Spied
+          THEN   ExtendTimer  105
+          THEN   Speech       88        ; "Timer started"
+          THEN   Reveal                 ch3
+          THEN   Reveal                 ch4
+          THEN   Reveal                 tesla1
+          THEN   Reveal                 tesla2
+          THEN   Reinforce                                tanya
+          THEN   Text         2         ; Objective 2 met
+USSR      ITEM   Church       ch2       @NE       s10 w14
+Greece  TRIGGER  *NONE
+          TEAM   tanya                  @N                
+            MEM  Chinook
+                 Tanya
+                 Medic
+            ACT  Move                   @N        s9  w2
+                 Unload
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Spy infiltrating Church #3 destroys SAMs down west edge of Soviet base
+;
+        TRIGGER
+          IF     Spied
+          THEN   FireTrigger  destsams
+          THEN   RevealMap
+          THEN   Text         3  ; Objective 3 met
+          THEN   Text         10 ; `Some enemy SAM sites have been destroyed!`
+USSR      ITEM   Church       ch3       @E        n11 w3
+
+        TRIGGER  destsams
+;       -----------------
+          THEN   Destroy
+USSR      ITEM   SAMSite                corn      s5  e1
+                 SAMSite                corn      s8  e1
+                 SAMSite                corn      s11 e1
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Spy infiltrating Church #4 brings in Destroyer
+;
+        TRIGGER
+          IF     Spied 
+          THEN   Reinforce                                naval
+          THEN   RevealMap
+USSR      ITEM   Church       ch4       @NW       s5  e9
+
+Greece    TEAM   naval                  @N        n1  w16
+            MEM  Destroyer      
+                 LST
+            ACT  Move                   @N        s1  w16
+                 Move                   @N        s8  w3 
+                 Unload
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Opening Reinforcements for Greece (human player)
+;
+Greece  TRIGGER  *NONE
+          TEAM   mcv                    @SW       s1  e5
+            MEM  MCV
+            ACT  Move                   @SW       n2  e5
+          TEAM   chin                   @SW       s1  e6
+            MEM  Chinook
+            ACT  Move                   @SW       n2  e6
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Low power causes Soviet paradrop
+;
+        TRIGGER
+          IF     LowPower     Greece
+          THEN   Reinforce                                lowp
+                 Reveal                 brl 
+        TRIGGER  *NONE     
+USSR      TEAM   lowp                   @N
+            MEM  Rifleman     3
+                 Rocketman    3
+                 Chinook
+            ACT  Move                   @N        s12 w2 
+                 Unload
+                 Attack       Buildings
+                 Do           Hunt
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Greek units entering main island from west cause Soviet Tanya paradrop
+;
+        TRIGGER
+          IF     EnteredBy    Greece
+          THEN   Reinforce                                rein1
+                 Reveal                 brl
+                 BeginProd    USSR
+          CELL                          isle3         e8  3   3     F
+        TRIGGER
+          IF     Destroyed
+          THEN   Reveal                 dd        s5  e3
+USSR      TEAM   rein1                  @N
+            MEM  Tanya        10     
+                 Chinook
+            ACT  Move         rein1     @N        s12 e5 
+                 Unload
+                 Attack       Buildings
+                 Do           Hunt
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Timed Paratrooper Attack at SW corner of main isle
+;
+USSR    TRIGGER
+          IF     ElapsedTime  10
+          THEN   Reinforce                                rein2
+        TRIGGER  *NONE
+USSR      TEAM   rein2                  @SSW
+            MEM  Grenadier    4
+                 Chinook
+            ACT  Move                   ch1           e3
+                 Unload
+                 Do           AreaGuard
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  When Soviet structures on east island are attacked,
+;    retaliate with Engineer raid on human player's Power
+;
+        TRIGGER
+          IF     Attacked                
+          THEN   Reinforce                                engraid
+USSR      ITEM   AdvPower               @E        n7  w3
+                 TeslaCoil    tesla2    ch3       s10 e1 
+                 SAMSite                ch3           w4      W
+                 SAMSite                ch3       s2  w4      W
+                 SAMSite                ch3       s6  w3      W
+                 SAMSite                ch3       s8  w2      W
+                 Silo                   ch3       s1  e2
+        TRIGGER  *NONE
+USSR      TEAM   engraid                @SW       s1  e13
+            MEM  Engineer     4
+            ACT  Move                   @SW       n2  e13 
+                 Unload
+                 Attack       Power    
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Winning and Losing criteria for human player
+;
+        TRIGGER
+          IF     TimerExpired
+          THEN   Loser        Greece
+        TRIGGER
+          IF     AllLost      USSR
+          THEN   Winner       Greece
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;
+;  Initial structure and unit placements
+;
+        TRIGGER  *NONE
+
+Greece    CELL   98                     isle1
+                              corn      @S2       n4  e3
+ 
+USSR      ITEM   ConstYard    cy        @SE       n10 w10
+                 AdvPower               cy            w3   
+                 AdvPower               cy            w6   
+                 AdvPower               cy            w10  
+                 AdvPower               cy            w13  
+                 AdvPower               cy        n4  w3   
+                 AdvPower               cy        n4  w6   
+                 AdvPower               cy        n4  w10  
+                 AdvPower               cy        n4  w13
+                 AdvPower               cy        n7  w11
+                 FlameTower             cy        n2    
+                 FlameTower             cy        n2  e1
+                 FlameTower             cy        n2  e2
+                 FlameTower             cy            w3
+                 FlameTower             cy            w4
+                 HeavyTank              cy        n1                AreaGuard
+                 V2Launcher             cy        n1  e1            AreaGuard
+                 HeavyTank              cy        n1  e2            AreaGuard
+                 TeslaCoil              corn          e1
+                 SAMSite                corn      s1  e2
+                 TeslaCoil              corn          e4
+                 SAMSite                corn      s1  e5
+                 SAMSite                corn      s2  e1
+                 SAMSite                cy        n7  w7
+                 SAMSite                cy        n7  w5
+                 TeslaCoil              corn      s3  e1
+                 TeslaCoil              corn      s6  e1
+                 TeslaCoil              corn      s9  e1
+                 TeslaCoil    tesla1    corn      s12 e1
+                 Dog          dog       cy        n6  w14         1 AreaGuard
+                 Dog                    dog                       4 AreaGuard
+                 Dog                    dog       s1  e9          2 AreaGuard
+                 Dog                    dog       s1  e9          3 AreaGuard
+                 Dog                    dog       s11 e5          1 AreaGuard
+                 Dog                    dog       s11 e5          4 AreaGuard
+                 Dog                    cy        n4  e1          2 AreaGuard
+                 Dog                    cy        n4  e1          3 AreaGuard
+                 FlameTower             corn      n1  w11
+                 FlameTower   flames    corn      n2  w11
+                 FlameTower             corn      n3  w11
+                 SAMSite      dd        @W        n10 e27
+                 FlameTower             dd            e2
+                 FlameTower             dd            e5  
+                 SAMSite                dd            e6
+                 Rifleman               isle2     n4  e9            Guard
+                 SubPen       sp        isle3     s3  e7  10
+                 SubPen                 sp        n9         
+                 Submarine              @SSW      n2  e3            Guard
+                 Submarine              @SSW      n2  e7            Guard
+                 Submarine              @SSW      n5                Guard
+                 Submarine              @SSW      n5  e4            Guard
+                 Submarine              ch2       n5  w7   
+                 Submarine              ch1       n3  w10
+                 Barrels      brl       rein1     n1
+                 Barrels                rein1     n1  w1
+                 Barrels                rein1     n1  w2
+                 Barrels                rein1     n1  w3
+                 Barrels                rein1     n1  w4
+                 Barrels                rein1     n1  w5
+                 Barrels                rein1     n1  w6
+                 Barrels                rein1     s2    
+                 Barrels                rein1     s2  w1
+                 Barrels                rein1     s2  w2
+                 Barrels                rein1     s2  w3
+                 Barrels                rein1     s2  w4
+                 Barrels                rein1     s2  w5
+                 Barrels                rein1     s2  w6
+                 MRJ                    rein1     s9  e2
+                 SAMSite                ch1       s3                R-
+                 SAMSite                ch1       s4                R-
+                 SAMSite                ch1       s3  e2            R-
+                 SAMSite                ch1       s4  e2            R-
+                 V2Launcher             ch4       n2  w1      E     Guard 
+                 V2Launcher             ch4       n1  w1      E     Guard
+                 SAMSite                ch4       n2  e2      E           
+                 SamSite                ch4       n1  e2      E            
+                 Rifleman               ch2       n2  e3          4 Sleep
+                 IronCurt               ch4       n2        
+Greece           AdvPower     app       @SW       n3  e9             
+                 RadarDome              @SW       n3  e7
+;.......2........3............4.........5.........6...7...8...9...0.1.........
+;ountry TRIGGER  trigname     R
+;         IF     event        param     cellpos   +ns +we
+;         THEN   action       param     cellpos   +ns +we param2
+;ountry   TEAM   teamname     cellname  cellpos   +ns +we pr  mi    RSADE
+;           MEM  unittype     num
+;           ACT  command      param     cellpos   +ns +we
+;ountry   ITEM   structtype   cellname  cellpos   +ns +we hc% dir   R+
+;ountry   ITEM   unittype     cellname  cellpos   +ns +we hc% dir s command
+;         CELL   wp           cellname  cellpos   +ns +we hhh www

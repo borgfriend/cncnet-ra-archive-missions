@@ -1,0 +1,76 @@
+                         RAMC - Cross Reference
+                         ----------------------
+
+Cell#      Cell Name      Formula                   Waypoint
+-----      ---------      --------------------      --------
+ 6060      ISLE3          12192       -48  +12        0
+ 9637      ISLE2          12192       -20   +5        1
+11557      ISLE1          12192        -5   +5        3
+ 6060      WF             ISLE3        +0   +0        0
+10808      CH1            12224       -11   -8      <none>
+ 5457      CH2            4191        +10  -14        5
+ 6876      CH3            8287        -11   -3        7
+ 4777      CH4            4128         +5   +9        8
+ 5701      REIN1          4160        +12   +5       23
+ 8157      TESLA2         CH3         +10   +1       10
+ 9667      CORN           10176        -4   +3      <none>
+10965      CY             12255       -10  -10      <none>
+11204      TESLA1         CORN        +12   +1        9
+10183      DOG            CY           -6  -14      <none>
+ 9400      FLAMES         CORN         -2  -11        6
+ 6971      DD             8224        -10  +27      <none>
+ 6451      SP             ISLE3        +3   +7      <none>
+ 5573      BRL            REIN1        -1   +0       20
+11817      APP            12192        -3   +9      <none>
+
+Symbol     Trigger Name
+------     ------------
+g000       <none>
+g001       <none>
+g002       <none>
+g003       <none>
+g004       <none>
+g005       <none>
+g006       <none>
+g007       <none>
+g008       <none>
+g009       <none>
+g010       <none>
+g011       DEVILSDEN
+g012       <none>
+g013       <none>
+g014       <none>
+g015       <none>
+g016       <none>
+g017       <none>
+g018       <none>
+g019       <none>
+g020       <none>
+g021       <none>
+g022       DESTSAMS
+g023       <none>
+g024       <none>
+g025       <none>
+g026       <none>
+g027       <none>
+g028       <none>
+g029       <none>
+g030       <none>
+g031       <none>
+
+Symbol     TeamType Name
+------     -------------
+t000       TANYA
+t001       NAVAL
+t002       MCV
+t003       CHIN
+t004       LOWP
+t005       REIN1
+t006       REIN2
+t007       ENGRAID
+
+Global     Switch Name
+------     -----------
+
+
+                         ----  END OF FILE  ----
