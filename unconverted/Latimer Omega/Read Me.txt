@@ -1,0 +1,67 @@
+***********************************************************************
+		       RED ALERT SINGLE PLAYER MISSION
+			       LATIMER Omega    Soviet
+			
+			     By: Colin Pennington 
+		           E-Mail: taccc@bright.net
+             WebPages: http://www.bright.net/~taccc/redalert.html
+        http://www.geocities.com/TimesSquare/Castle/8604/index.html
+***********************************************************************
+
+INTRODUCTION:
+-----------------------------------------------------------------------
+As usual, I have tried to add something new to my latest creation. This
+time, I have added new units. 2 structures and 2 aircraft. 1 structure is
+used only by the computer. Once again, this mission hasn't been fully 
+play-tested. But it should work fine. If you find ANY bugs please E-mail
+me.   TESTED ON P5-133, 16 MB, 6X
+
+PROGRAMS USED:
+-----------------------------------------------------------------------
+RACK 1.0 beta 2 and Overlay tiles from Gavin Pugh
+Team and Trigs editor 1.2 by Frank Edling
+Andrew Griffin's guide
+RA-MIXer by Moritz Mertinkat
+CCMIX by Chris Groenveld
+
+THEME:  
+-----------------------------------------------------------------------
+The battle has been raging for months. The allies are starting to gain
+momentum now that they have Magnum Artillery units and airfields. They
+have blocked our only route to the southern ore fields, we're low on 
+credits, and there is little ore near our base. Luckily, the military
+is sending in high tech reinforcements. You will be in charge of our
+new technology. Build up our base and create an air force. You will
+need a tech center and an aircraft control tower. Use these new units
+to help move our ore mining facilities to the northeast area of the 
+mountain. Take over the abandoned barracks and start production. From
+this area the southern ore fields are accessible. Once this is done,
+begin our offensive! Tanya is over-seeing the battle in the allied
+base. Do your best to kill her! We also require you to capture their
+tech center so we can gain whatever technology that they have. Once
+this is done, destroy all allied units and structures!
+
+INCLUDED FILES:
+-----------------------------------------------------------------------
+Read Me.txt (this document)
+sc-700.mix  (the new scenario and new graphics)
+mission.ini  (the new mission briefing) note: the briefing is now in the
+	     sc-700.mix file, but you MUST HAVE the empty mission.ini 
+	     file in the RA folder for it to work properly.
+tutorial.ini (the new text)
+title.pcx (the new front screen)
+
+INSTALLATION:
+-----------------------------------------------------------------------
+Just place the "sc-700.mix" file, the "tutorial.ini", the "mission.ini",
+and the "title.pcx" files in the same directory that RED ALERT is in.  
+THEN start RED ALERT.  Select "NEW GAME".  
+Then select Soviet and my mission is loaded.  
+
+UNINSTALLATION:
+-----------------------------------------------------------------------
+Just place the files in a different directory.
+ 
+
+
+
