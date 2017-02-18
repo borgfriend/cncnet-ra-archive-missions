@@ -1,24 +1,33 @@
+#Latimer Beta
+**Side:** Allies
+**Add-on required:** none
+**Date added:** 16-Mar-2003
+**Author:** Colin Pennington
+**Staff rating:** n/a
+
+**Description:** A new Soviet base has been detected. We are building a new base in the area. Tanya is supervising the construction. You are to finish the base and destroy all Soviet units and structures. Do not let Tanya die!
+
+Original Link:http://ra.afraid.org/download.php/missions/latbeta.zip
+
 ***********************************************************************
 		       RED ALERT SINGLE PLAYER MISSION
-			       LATIMER ALPHA
+			       LATIMER BETA
 			
 			     By: Colin Pennington
-		     E-Mail: taccc@bright.net
+		           E-Mail: taccc@bright.net
         WebPage: http://www.bright.net/~taccc/redalert.html
 ***********************************************************************
 
 INTRODUCTION:
 -----------------------------------------------------------------------
-This is my first mission.  It seems hard, but it isn't that bad once you 
-know what's coming.  I don't know of any bugs, but if you find any please
+This is my second mission. I don't know of any bugs, but if you find any please
 E-mail me.
 
 THEME:  
 -----------------------------------------------------------------------
-The Soviets kidnapped and brainwashed Tanya.  She is now on her way to  
-destroy your base.  You must stop her before she reaches the tech center.
-Your base will be useless without it.  Once Tanya is dead, destroy all 
-Soviet units and structures.
+A new Soviet base has been detected. We are building a new base in the area.
+Tanya is supervising the construction. You are to finish the base and destroy
+all Soviet units and structures.  Do not let Tanya die.
 
 INCLUDED FILES:
 -----------------------------------------------------------------------

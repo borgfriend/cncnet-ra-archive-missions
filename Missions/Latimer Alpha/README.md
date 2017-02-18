@@ -1,22 +1,35 @@
+#Latimer Alpha
+**Side:** Allies
+**Add-on required:** none
+**Date added:** 16-Mar-2003
+**Author:** Colin Pennington
+**Staff rating:** n/a
+
+**Description:** The Soviets kidnapped and brainwashed Tanya. She is now on her way to destroy your base. You must stop her before she reaches the tech center. Your base will be useless without it. Once Tanya is dead, destroy all Soviet units and structures.
+
+Original Link:http://ra.afraid.org/download.php/missions/latalpha.zip
+
 ***********************************************************************
 		       RED ALERT SINGLE PLAYER MISSION
-			       LATIMER BETA
+			       LATIMER ALPHA
 			
 			     By: Colin Pennington
-		           E-Mail: taccc@bright.net
+		     E-Mail: taccc@bright.net
         WebPage: http://www.bright.net/~taccc/redalert.html
 ***********************************************************************
 
 INTRODUCTION:
 -----------------------------------------------------------------------
-This is my second mission. I don't know of any bugs, but if you find any please
+This is my first mission.  It seems hard, but it isn't that bad once you 
+know what's coming.  I don't know of any bugs, but if you find any please
 E-mail me.
 
 THEME:  
 -----------------------------------------------------------------------
-A new Soviet base has been detected. We are building a new base in the area.
-Tanya is supervising the construction. You are to finish the base and destroy
-all Soviet units and structures.  Do not let Tanya die.
+The Soviets kidnapped and brainwashed Tanya.  She is now on her way to  
+destroy your base.  You must stop her before she reaches the tech center.
+Your base will be useless without it.  Once Tanya is dead, destroy all 
+Soviet units and structures.
 
 INCLUDED FILES:
 -----------------------------------------------------------------------
