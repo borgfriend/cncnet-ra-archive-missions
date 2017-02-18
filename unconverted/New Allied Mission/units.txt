@@ -1,0 +1,31 @@
+This is a list of the units and structures in my new mission:
+
+Greece (you):		1 Rifle Soldier (doomed)
+			Special Agent Chan (doomed)
+			Special Agent Delphi (doomed)
+			1 Mobile Contruction Vehicle
+			1 damaged Soviet Mammoth Tank (captured)
+			1 damaged Soviet Heavy Tank (captured)
+
+USSR (bad guys):	1 Ore/Gem Harvester
+			6 Mammoth Tanks
+			12 Rifle Soldiers
+			2 Grenadiers
+			3 Tesla Coils
+			8 Power Plants
+			1 Soviet Tech Center
+			1 Allied Tech Center (captured)
+			1 Allied Bio-Lab (captured)
+			1 Contruction Yard
+			1 Radar Dome
+			1 Barracks
+			1 Refinery
+
+England (good guys):	2 Civilians
+
+Neutral Civilians:	1 Oil Refinery
+
+
+
+
+-Shaun Lyle
