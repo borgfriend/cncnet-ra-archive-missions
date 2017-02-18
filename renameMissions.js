@@ -17,8 +17,10 @@ var walkSync = function(dir, filelist) {
       if (path.extname(file.toLowerCase()) === ".ini"){
         filelist.push(dir + '/' + file);
         var oldName = dir + '/' + file;
-        var newName = dir + '/CMU' + count + "EA.ini"; 
+        var newName = dir + '/CMU' + count + "EA.ini";
+        var allPath =  './FullCollection/CMU' + count + "EA.ini"
         fs.renameSync(oldName, newName);
+        fs.createReadStream(newName).pipe(fs.createWriteStream(allPath));
         count++;
       }
       
