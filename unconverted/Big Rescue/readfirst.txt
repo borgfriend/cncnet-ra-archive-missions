@@ -1,0 +1,52 @@
+
+
+
+Bernd Franzmeier 
+LLukeBF@t-online.de
+
+Name:  Big Rescue
+Typ: Single Player Mission
+Size:96 x 96      temperate
+Tested on Pentium100 32MB with RedAlert Version 1.07  english  
+         - it work with the german version but you get other videos
+   (the german version hasn`t all the possible videos)
+
+Command and Conquer-Red Alert is a trademark of Westwood Studios, Inc.
+
+This is my first single player mission.
+Included:           1. ReadFirst file  (this file)
+                    2. blank mission.ini file 
+                    3. Tutorial.ini 
+                    4. sc-001.mix
+                      
+
+When you give it to others -give them all files,please.
+
+Do you know something how to create a single player mission?
+When yes - I would like  to get your comments or some suggestions for a better mission. 
+When no - You shouldn`t change anything in the two *.ini files or the mix-file. 
+(E-Mail please!)
+
+How to start my mission?
+   First you must copy the two *.ini- and the mixfile in your RedAlert Directory.
+ - the mission.ini file is a blank file but very important for the mission briefing.                       
+   the tutorial.ini file is different from the original,
+   which is stored in a mix-file,when you have a separate tutorial.ini you can 
+   overwrite it with my tutorial.ini. It has no influence to the origial 
+   westwood missions and most of selfcreated missions.
+ -In the sc-001.mix file is the main mission file and some new sounds.
+   It also includs a rules.ini file,when you  have a rules.ini you must move it out
+   of your RA directory,because some entries are necessary for my mission. 
+   A separately rules.ini will overwrite my rules.ini section(in the sc-001.mix).
+   You could move your rules.ini file in another subfolder.
+   Now start your RedAlert and choose new game - soviet,difficulty?-normal is ok.
+   For correct"Videos" you must  take the Soviet CDROM(englishVersion) .
+   I think my mission is very easy. 
+   It`s impossible to fail. 
+   Don`t wonder about the APC`s  -  they can transport 10civilians(not 5) but show
+   a  trace for a short time.
+   Otherwise you can E-Mail me your questions or comments.
+   I don`t know if I`ll create another single player mission.At the moment I work on an
+     AddOn with changed Icon graphics and some new sounds.
+    
+      GoodLuck.

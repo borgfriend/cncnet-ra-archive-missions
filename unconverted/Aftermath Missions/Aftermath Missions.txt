@@ -1,0 +1,82 @@
+                                Command & Conquer Red Alert: The Aftermath
+                                             MISSIONS:
+                                ------------------------------------------
+
+Introduction: Ok, here is two missions missions for Red alert aftermath, Italian Invasion,
+Red Retaliation, Soldier Volkov Assassination It took me 2 days build these. Also, i have other releases, like 
+"Russian Resistance" & "Soviet Empire Strikes Back" Mission pack for Red alert. 
+(aftermath needs to be installed) Check at: http://www.comtrade.ee/rost/ra
+
+NOTES:
+------
+Read this section carefully before you start.
+
+You NEED AFTERMATH CD to play these missions, if you don't have one,
+you've just wasted your time. 3 Missions for Allied side and 1 for
+Soviets.
+
+
+How i can play these missions?
+--------------------------------
+
+First of all extract zip file you downloaded to your Red alert directory,
+whatever it is. Then, run Red alert and choose "NEW MISSIONS" After that,
+pick a mission you wish to try.
+
+Missions are: Red Retaliation, Italian Invasion and Soldier Volkov Assassination.
+
+
+Zip includes:
+-------------
+scg40ea.ini
+scg41ea.ini
+scg42ea.ini
+rules.ini
+tutorial.ini
+mission.ini
+aftrmath.ini
+Aftermath Missions.txt (you're just reading it)
+
+Credits:
+--------
+Author of Missions: Aaro Ruohonen
+Author of Multiplayer Maps: Aaro Ruohonen
+
+Additional Credits: Nobody, exept Westwood studios for C&C Red Alert & Aftermath
+
+Mission Descriptions: 
+---------------------
+
+Italian Invasion: Soviets have invaded in Italy to settle scores
+with allied forces. Your task as french commander is to defeat soviet forces.
+
+Difficulty Rating: Easy
+
+Red Retaliation: Allied forces have disabled soviet Iron curtain, and
+soviets got mad about this and they decide to start massive counter 
+attack against allies.
+
+Difficulty Rating: Hard
+
+Soldier Volkov Assassination: British forces have found soviet soldier
+Volkov, he carries more detailed information about M.A.D tank. 
+Your destination as british commander is to eliminate him.
+
+Difficulty Rating: Hard
+
+Atomic Processing Facility: Soviets are planning nuclear strike to allied
+headquarters in london. Your task as commander of ukraine forces is to
+protect russian missile silos from allied rentless attacks.
+
+Difficulty Rating: Hard
+
+
+Comments are welcome at: tesla87@hotmail.com
+
+
+
+
+
+
+                             
+ 
