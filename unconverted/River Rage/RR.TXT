@@ -1,0 +1,20 @@
+_________________RIVER_RAGE_________________
+
+NAME=RIVER RAGE
+AUHTOR=>SYLLE> SILVESTER DEZSI
+DIFICULTY=MEDIUM HARD
+BULID TIME=4 HOURS
+TOOLS=R.A.C.K 0.12= for placement
+      RaBuild 3.0 =for triggers
+      Wordpad 3.0 =for mini rules
+      Eddwin.exe =for map
+TESTED ON=RA95.EXE V1.07E
+CONTENTS=Sc-007.mix 
+         Mission.ini =blank file needed!
+         RR.txt =text you are reading
+INSTALL=place the files above in you ra directory
+def=(C:\WESTWOOD\REDALERT\)
+E-MAIL=ZAPER@ROCKETMAIL.COM
+
+___________________>SYLLE>___________________
+          

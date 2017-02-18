@@ -1,0 +1,20 @@
+Skull Island Mission v1.0
+by James Walker
+
+-Copyright-
+Copyright James Walker. You may not distribute this file w/o 
+permission.
+
+-Contact-
+If you like this mission, email me at flamewolf8@aol.com
+
+-Intallation-
+Unzip into your Red Alert directory, and start a game as normal
+and choose "Allies" as your side.
+YOU MUST HAVE AFTERMATH TO PLAY THIS MISSION.
+
+-Uninstall-
+Delete scg01ea.ini, mission.ini, and tutorial.ini when you want
+to uninstall.
+
+Enjoy!
