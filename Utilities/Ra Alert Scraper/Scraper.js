@@ -78,6 +78,10 @@ const completed = [
             name: 'Campaigns',
             link: 'http://ra.afraid.org/html/downloads/campaigns.html'
         },
+         {
+            name: 'Missions',
+            link: 'http://ra.afraid.org/html/downloads/missions.html'
+        }
 
 ]
 
@@ -85,8 +89,8 @@ const sources =
     [
         
         {
-            name: 'Missions',
-            link: 'http://ra.afraid.org/html/downloads/missions.html'
+            name: 'Campaigns',
+            link: 'http://ra.afraid.org/html/downloads/campaigns.html'
         }
 
     ];
