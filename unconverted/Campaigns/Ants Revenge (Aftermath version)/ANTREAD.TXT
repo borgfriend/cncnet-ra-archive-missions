@@ -1,0 +1,28 @@
+GENERAL:
+This is a small campaign of three missions where you play the Ants.
+Therefore, to play you will need to have the Counter Strike (CS) add-on 
+(or may be the patch upgrade.)
+
+From there the progression is much the same as the actual Ant missions
+included in the official CS disk. In a similar fashion, you will not be 
+taken to the scorescreen, or the Map select screen but proceed directly
+to the next level.
+
+CONTENT of ZIP FILE:
+1. SC-ANT1.MIX file
+2. SCG01EA.INI file
+3. SCG01EB.INI file
+4. SCG01EC.INI file
+5. MISSION.INI file
+6. TUTORIAL.INI file
+7. ANTREAD.TXT file (this file)
+
+TO INSTALL
+Unzip the ANT.ZIP file into your Redalert directory using WINZIP or PKZIP
+or something similar.
+
+
+Have fun!!!
+
+Made by CKP,Downunder, Australia.
+Fixed by RaZor @ 08.07.2000 (http://ra.afraid.org)
